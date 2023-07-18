@@ -1,0 +1,13 @@
+<app-header></app-header>
+<br>
+<div class="card" style="width: 18rem; height: 27rem;">
+    <img class="card-img-top" src="assets/Pdf.svg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Compress pdf</h5>
+      <p class="card-text">Compress PDF is a feature that reduces the file size of PDF documents while preserving their content and quality. It helps optimize PDFs for easier storage, sharing, and faster transmission.</p>
+      <form (ngSubmit) = compressPdf() enctype="multipart/form-data">
+        <input type="file" (change)="onFileSelect($event)" name="file" accept="application/pdf">
+        <button type="submit" class="btn btn-outline-dark">Compress PDF Now</button>
+      </form> 
+    </div>
+  </div>
